@@ -1,0 +1,489 @@
+JFDML JFormDesigner: "8.1.1.0.298" Java: "17.0.7" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) ) {
+			name: "this"
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) ) {
+				name: "panel1"
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label1"
+					"text": "ФИО"
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"x": 10
+					"y": 10
+					"width": 50
+					"height": 25
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "textField1"
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "textField1", true ) )
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"x": 60
+					"y": 10
+					"width": 190
+					"height": 25
+				} )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 0
+				"y": 40
+				"height": 35
+				"width": 400
+			} )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) ) {
+				name: "panel2"
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label2"
+					"text": "Лет"
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"x": 10
+					"y": 10
+					"width": 50
+					"height": 25
+				} )
+				add( new FormComponent( "javax.swing.JSpinner" ) {
+					name: "spinner1"
+					"model": new javax.swing.SpinnerNumberModel( 0, 0, 200, 1 )
+					addEvent( new FormEvent( "javax.swing.event.ChangeListener", "stateChanged", "spinner1StateChanged", true ) )
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"x": 60
+					"y": 10
+					"height": 25
+				} )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 400
+				"height": 35
+				"x": 0
+				"y": 75
+			} )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) ) {
+				name: "panel3"
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label3"
+					"text": "Пол"
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"x": 10
+					"y": 10
+					"width": 50
+					"height": 25
+				} )
+				add( new FormComponent( "javax.swing.JRadioButton" ) {
+					name: "radioButton1"
+					"text": "Муж"
+					"$buttonGroup": new FormReference( "buttonGroup1" )
+					"selected": true
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "radioButton1", true ) )
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"x": 65
+					"y": 10
+				} )
+				add( new FormComponent( "javax.swing.JRadioButton" ) {
+					name: "radioButton2"
+					"text": "Жен"
+					"$buttonGroup": new FormReference( "buttonGroup1" )
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "radioButton2", true ) )
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"x": 115
+					"y": 10
+				} )
+				add( new FormComponent( "javax.swing.JRadioButton" ) {
+					name: "radioButton3"
+					"text": "Другое"
+					"$buttonGroup": new FormReference( "buttonGroup1" )
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "radioButton3", true ) )
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"x": 165
+					"y": 10
+				} )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 400
+				"height": 35
+				"x": 0
+				"y": 110
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label4"
+				"text": "Родитель"
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 170
+				"y": 10
+				"width": 65
+				"height": 25
+			} )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) ) {
+				name: "panel4"
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label5"
+					"text": "Email"
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"x": 10
+					"y": 10
+					"width": 50
+					"height": 25
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "textField2"
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "textField2", true ) )
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"x": 60
+					"y": 10
+					"width": 190
+					"height": 25
+				} )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 400
+				"height": 35
+				"x": 0
+				"y": 145
+			} )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) ) {
+				name: "panel5"
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label6"
+					"text": "Телефон"
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"x": 10
+					"y": 10
+					"width": 50
+					"height": 25
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "textField3"
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "textField3", true ) )
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"x": 60
+					"y": 10
+					"width": 190
+					"height": 25
+				} )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 400
+				"height": 35
+				"x": 0
+				"y": 180
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label7"
+				"text": "Ребёнок"
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 65
+				"height": 25
+				"x": 170
+				"y": 220
+			} )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) ) {
+				name: "panel6"
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label8"
+					"text": "ФИО"
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"x": 10
+					"y": 10
+					"width": 50
+					"height": 25
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "textField4"
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "textField4", true ) )
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"x": 60
+					"y": 10
+					"width": 190
+					"height": 25
+				} )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 400
+				"height": 35
+				"x": 0
+				"y": 245
+			} )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) ) {
+				name: "panel7"
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label9"
+					"text": "Лет"
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"x": 10
+					"y": 10
+					"width": 50
+					"height": 25
+				} )
+				add( new FormComponent( "javax.swing.JSpinner" ) {
+					name: "spinner2"
+					"model": new javax.swing.SpinnerNumberModel( 0, 0, 200, 1 )
+					addEvent( new FormEvent( "javax.swing.event.ChangeListener", "stateChanged", "spinner2StateChanged", true ) )
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"x": 60
+					"y": 10
+					"height": 25
+				} )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 400
+				"height": 35
+				"x": 0
+				"y": 285
+			} )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) ) {
+				name: "panel8"
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label10"
+					"text": "Класс"
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"x": 10
+					"y": 5
+					"width": 50
+					"height": 25
+				} )
+				add( new FormComponent( "javax.swing.JComboBox" ) {
+					name: "comboBox1"
+					"toolTipText": "а\nб\nв\nг\nд\nе\nж\nз"
+					"maximumRowCount": 6
+					"model": new javax.swing.DefaultComboBoxModel {
+						selectedItem: "А"
+						addElement( "А" )
+						addElement( "Б" )
+						addElement( "В" )
+						addElement( "Г" )
+						addElement( "Д" )
+						addElement( "Е" )
+						addElement( "Ж" )
+						addElement( "З" )
+					}
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "comboBox1", true ) )
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"x": 240
+					"y": 5
+					"width": 115
+				} )
+				add( new FormComponent( "javax.swing.JComboBox" ) {
+					name: "comboBox2"
+					"maximumRowCount": 11
+					"model": new javax.swing.DefaultComboBoxModel {
+						selectedItem: "1"
+						addElement( "1" )
+						addElement( "2" )
+						addElement( "3" )
+						addElement( "4" )
+						addElement( "5" )
+						addElement( "6" )
+						addElement( "7" )
+						addElement( "8" )
+						addElement( "9" )
+						addElement( "10" )
+						addElement( "11" )
+					}
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "comboBox2", true ) )
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 115
+					"height": 30
+					"x": 60
+					"y": 5
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label11"
+					"text": "Буква"
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 50
+					"height": 25
+					"x": 190
+					"y": 5
+				} )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 400
+				"height": 35
+				"x": 0
+				"y": 355
+			} )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) ) {
+				name: "panel9"
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label12"
+					"text": "Рост"
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"x": 10
+					"y": 15
+					"width": 50
+					"height": 25
+				} )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) ) {
+					name: "panel10"
+					add( new FormComponent( "javax.swing.JSlider" ) {
+						name: "slider1"
+						"maximum": 200
+						"minorTickSpacing": 5
+						"minimum": 80
+						"toolTipText": "ММ"
+						"value": 0
+						"majorTickSpacing": 15
+						"paintTicks": true
+						"paintLabels": true
+						"snapToTicks": true
+						addEvent( new FormEvent( "javax.swing.event.ChangeListener", "stateChanged", "slider1StateChanged", true ) )
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+						"width": 305
+						"height": 40
+					} )
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"x": 60
+					"y": 10
+				} )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 400
+				"height": 50
+				"x": 0
+				"y": 390
+			} )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) ) {
+				name: "panel11"
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label13"
+					"text": "Кружки"
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"x": 10
+					"y": 15
+					"width": 50
+					"height": 25
+				} )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) ) {
+					name: "panel12"
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"x": 60
+					"y": 10
+				} )
+				add( new FormComponent( "javax.swing.JCheckBox" ) {
+					name: "checkBox1"
+					"text": "Плаванье"
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "checkBox1", true ) )
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"x": 65
+					"y": 20
+					"width": 180
+				} )
+				add( new FormComponent( "javax.swing.JCheckBox" ) {
+					name: "checkBox2"
+					"text": "Борьба"
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "checkBox2", true ) )
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 180
+					"height": 21
+					"x": 65
+					"y": 40
+				} )
+				add( new FormComponent( "javax.swing.JCheckBox" ) {
+					name: "checkBox3"
+					"text": "Музыка"
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "checkBox3", true ) )
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 180
+					"height": 21
+					"x": 65
+					"y": 60
+				} )
+				add( new FormComponent( "javax.swing.JCheckBox" ) {
+					name: "checkBox4"
+					"text": "Гимнастика"
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "checkBox4", true ) )
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 180
+					"height": 21
+					"x": 65
+					"y": 80
+				} )
+				add( new FormComponent( "javax.swing.JCheckBox" ) {
+					name: "checkBox5"
+					"text": "Робототехника"
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "checkBox5", true ) )
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 180
+					"height": 21
+					"x": 65
+					"y": 100
+				} )
+				add( new FormComponent( "javax.swing.JCheckBox" ) {
+					name: "checkBox6"
+					"text": "Волейбол"
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "checkBox6", true ) )
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 180
+					"height": 21
+					"x": 65
+					"y": 120
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "button1"
+					"text": "Ответ"
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"x": 65
+					"y": 160
+					"width": 135
+				} )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 400
+				"height": 240
+				"x": 0
+				"y": 440
+			} )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) ) {
+				name: "panel14"
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label15"
+					"text": "Пол"
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"x": 10
+					"y": 10
+					"width": 50
+					"height": 25
+				} )
+				add( new FormComponent( "javax.swing.JRadioButton" ) {
+					name: "radioButton7"
+					"text": "Муж"
+					"$buttonGroup": new FormReference( "buttonGroup2" )
+					"selected": true
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "radioButton1", true ) )
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "radioButton7", true ) )
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"x": 65
+					"y": 10
+				} )
+				add( new FormComponent( "javax.swing.JRadioButton" ) {
+					name: "radioButton8"
+					"text": "Жен"
+					"$buttonGroup": new FormReference( "buttonGroup2" )
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "radioButton2", true ) )
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "radioButton8", true ) )
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"x": 115
+					"y": 10
+				} )
+				add( new FormComponent( "javax.swing.JRadioButton" ) {
+					name: "radioButton9"
+					"text": "Другое"
+					"$buttonGroup": new FormReference( "buttonGroup2" )
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "radioButton3", true ) )
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "radioButton9", true ) )
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"x": 165
+					"y": 10
+				} )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 400
+				"x": 0
+				"y": 320
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 85, 5 )
+			"size": new java.awt.Dimension( 400, 685 )
+		} )
+		add( new FormNonVisual( "javax.swing.ButtonGroup" ) {
+			name: "buttonGroup1"
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 565, 55 )
+		} )
+		add( new FormNonVisual( "javax.swing.ButtonGroup" ) {
+			name: "buttonGroup2"
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 565, 100 )
+		} )
+	}
+}
