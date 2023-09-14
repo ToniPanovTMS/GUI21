@@ -116,13 +116,146 @@ public class GUI21 extends JPanel {
     }
 
     private void button1(ActionEvent e) {
-            JFrame dialog = new JFrame();
-            dialog.pack();
-            Dimension dim = Toolkit.getDefaultToolkit().getScreenSize();
-            dialog.setBounds(dim.width / 2 - 400 / 2, dim.height / 2 - 420 / 2, 400, 420);
-            dialog.setVisible(true);
+        JDialog dialog =createJdialog();
+        dialog.pack();
+        Dimension dim = Toolkit.getDefaultToolkit().getScreenSize();
+        dialog.setVisible(true);
 
+    }
+    private JDialog createJdialog (){
+        dialog1 = new JDialog();
+        label14 = new JLabel();
+        label16 = new JLabel();
+        label17 = new JLabel();
+        label18 = new JLabel();
+        label19 = new JLabel();
+        label20 = new JLabel();
+        label21 = new JLabel();
+        label22 = new JLabel();
+        label23 = new JLabel();
+        label24 = new JLabel();
+        label25 = new JLabel();
+        label27 = new JLabel();
+        label28 = new JLabel();
+        label29 = new JLabel();
+        label30 = new JLabel();
+        label31 = new JLabel();
+        label32 = new JLabel();
+        label33 = new JLabel();
+        label34 = new JLabel();
+        label35 = new JLabel();
+        label36 = new JLabel();
+        label37 = new JLabel();
 
+        dialog1.setTitle("\u041e\u0442\u0432\u0435\u0442");
+        var dialog1ContentPane = dialog1.getContentPane();
+        dialog1ContentPane.setLayout(null);
+
+        //---- label14 ----
+        label14.setText("\u0424\u0418\u041e \u0440\u043e\u0434.");
+        dialog1ContentPane.add(label14);
+        label14.setBounds(15, 10, 145, 25);
+
+        //---- label16 ----
+        label16.setText("\u043b\u0435\u0442");
+        dialog1ContentPane.add(label16);
+        label16.setBounds(15, 40, 145, 25);
+
+        //---- label17 ----
+        label17.setText("\u043f\u043e\u043b");
+        dialog1ContentPane.add(label17);
+        label17.setBounds(15, 70, 145, 25);
+
+        //---- label18 ----
+        label18.setText("Email");
+        dialog1ContentPane.add(label18);
+        label18.setBounds(15, 100, 145, 25);
+
+        //---- label19 ----
+        label19.setText("\u0422\u0435\u043b\u0435\u0444\u043e\u043d");
+        dialog1ContentPane.add(label19);
+        label19.setBounds(15, 130, 145, 25);
+
+        //---- label20 ----
+        label20.setText("\u0424\u0418\u041e \u0440\u0435\u0431\u0451\u043d\u043a\u0430");
+        dialog1ContentPane.add(label20);
+        label20.setBounds(15, 160, 145, 25);
+
+        //---- label21 ----
+        label21.setText("\u043b\u0435\u0442");
+        dialog1ContentPane.add(label21);
+        label21.setBounds(15, 190, 145, 25);
+
+        //---- label22 ----
+        label22.setText("\u043f\u043e\u043b");
+        dialog1ContentPane.add(label22);
+        label22.setBounds(15, 220, 145, 25);
+
+        //---- label23 ----
+        label23.setText("\u043a\u043b\u0430\u0441\u0441");
+        dialog1ContentPane.add(label23);
+        label23.setBounds(15, 250, 145, 25);
+
+        //---- label24 ----
+        label24.setText("\u0440\u043e\u0441\u0442");
+        dialog1ContentPane.add(label24);
+        label24.setBounds(15, 280, 145, 25);
+
+        //---- label25 ----
+        label25.setText("\u043a\u0440\u0443\u0436\u043a\u0438");
+        dialog1ContentPane.add(label25);
+        label25.setBounds(15, 310, 145, 25);
+
+        dialog1ContentPane.add(label27);
+        label27.setBounds(155, 10, 145, 25);
+        label27.setText(ParentsFIO);
+        dialog1ContentPane.add(label28);
+        label28.setBounds(155, 40, 145, 25);
+        label28.setText(String.valueOf(ParentsYar));
+        dialog1ContentPane.add(label29);
+        label29.setBounds(155, 70, 145, 25);
+        label29.setText(ParentsSex);
+        dialog1ContentPane.add(label30);
+        label30.setBounds(155, 100, 145, 25);
+        label30.setText(ParentsEmail);
+        dialog1ContentPane.add(label31);
+        label31.setBounds(155, 130, 145, 25);
+        label31.setText(ParentsPhone);
+        dialog1ContentPane.add(label32);
+        label32.setBounds(155, 160, 145, 25);
+        label32.setText(StudentFIO);
+        dialog1ContentPane.add(label33);
+        label33.setBounds(155, 190, 145, 25);
+        label33.setText(String.valueOf(StudentYar));
+        dialog1ContentPane.add(label34);
+        label34.setBounds(155, 220, 145, 25);
+        label34.setText(StudentSex);
+        dialog1ContentPane.add(label35);
+        label35.setBounds(155, 250, 145, 25);
+        label35.setText(Class[0]+" "+Class[1]);
+        dialog1ContentPane.add(label36);
+        label36.setBounds(155, 280, 145, 25);
+        label36.setText(String.valueOf(StudentHeight));
+        dialog1ContentPane.add(label37);
+        label37.setBounds(155, 310, 145, 105);
+        label37.setText(StudentHobby[0]+" "+StudentHobby[1]+" "+StudentHobby[2]+" "+StudentHobby[3]+" "+StudentHobby[4]+" "+StudentHobby[5]);
+        {
+            // compute preferred size
+            Dimension preferredSize = new Dimension();
+            for(int i = 0; i < dialog1ContentPane.getComponentCount(); i++) {
+                Rectangle bounds = dialog1ContentPane.getComponent(i).getBounds();
+                preferredSize.width = Math.max(bounds.x + bounds.width, preferredSize.width);
+                preferredSize.height = Math.max(bounds.y + bounds.height, preferredSize.height);
+            }
+            Insets insets = dialog1ContentPane.getInsets();
+            preferredSize.width += insets.right;
+            preferredSize.height += insets.bottom;
+            dialog1ContentPane.setMinimumSize(preferredSize);
+            dialog1ContentPane.setPreferredSize(preferredSize);
+        }
+        dialog1.pack();
+        dialog1.setLocationRelativeTo(dialog1.getOwner());
+        return dialog1;
     }
     private void initComponents() {
         // JFormDesigner - Component initialization - DO NOT MODIFY  //GEN-BEGIN:initComponents  @formatter:off
@@ -793,5 +926,28 @@ public class GUI21 extends JPanel {
     private JRadioButton radioButton7;
     private JRadioButton radioButton8;
     private JRadioButton radioButton9;
+    private JDialog dialog1;
+    private JLabel label14;
+    private JLabel label16;
+    private JLabel label17;
+    private JLabel label18;
+    private JLabel label19;
+    private JLabel label20;
+    private JLabel label21;
+    private JLabel label22;
+    private JLabel label23;
+    private JLabel label24;
+    private JLabel label25;
+    private JLabel label27;
+    private JLabel label28;
+    private JLabel label29;
+    private JLabel label30;
+    private JLabel label31;
+    private JLabel label32;
+    private JLabel label33;
+    private JLabel label34;
+    private JLabel label35;
+    private JLabel label36;
+    private JLabel label37;
     // JFormDesigner - End of variables declaration  //GEN-END:variables  @formatter:on
 }
