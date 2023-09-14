@@ -1,8 +1,7 @@
-import java.awt.*;
-import java.awt.event.*;
 import javax.swing.*;
-import javax.swing.event.*;
-
+import javax.swing.event.ChangeEvent;
+import java.awt.*;
+import java.awt.event.ActionEvent;
 public class GUI21 extends JPanel { 
     static String ParentsFIO ="";
     static int ParentsYar =0;
@@ -29,16 +28,15 @@ public class GUI21 extends JPanel {
         frame.setBounds(dim.width / 2 - 400 / 2, dim.height / 2 - 680 / 2, 400, 680);
         frame.setVisible(true);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-
     }
 
 
     private void textField1(ActionEvent e) {
-        ParentsFIO= textField1.getText();
+        ParentsFIO=textField1.getText();
     }
 
     private void spinner1StateChanged(ChangeEvent e) {
-        ParentsYar= (int) spinner1.getValue();
+        ParentsYar=(int) spinner1.getValue();
     }
 
     private void radioButton1(ActionEvent e) {
@@ -54,19 +52,19 @@ public class GUI21 extends JPanel {
     }
 
     private void textField2(ActionEvent e) {
-        ParentsEmail = textField2.getText();
+        ParentsEmail= textField2.getText();
     }
 
     private void textField3(ActionEvent e) {
-        ParentsPhone = textField3.getText();
+        ParentsPhone=textField3.getText();
     }
 
     private void textField4(ActionEvent e) {
-        StudentFIO = textField4.getText();
+        StudentFIO=textField4.getText();
     }
 
     private void spinner2StateChanged(ChangeEvent e) {
-        StudentYar= (int) spinner1.getValue();
+        StudentYar=(int) spinner1.getValue();
     }
     private void radioButton7(ActionEvent e) {
         StudentSex="Мужской";
@@ -90,7 +88,7 @@ public class GUI21 extends JPanel {
 
     private void slider1StateChanged(ChangeEvent e) {
         StudentHeight=slider1.getValue();
-        System.out.println(StudentHeight);
+
     }
 
     private void checkBox1(ActionEvent e) {
@@ -118,6 +116,11 @@ public class GUI21 extends JPanel {
     }
 
     private void button1(ActionEvent e) {
+            JFrame dialog = new JFrame();
+            dialog.pack();
+            Dimension dim = Toolkit.getDefaultToolkit().getScreenSize();
+            dialog.setBounds(dim.width / 2 - 400 / 2, dim.height / 2 - 420 / 2, 400, 420);
+            dialog.setVisible(true);
 
     }
     private void initComponents() {
@@ -174,12 +177,12 @@ public class GUI21 extends JPanel {
         radioButton9 = new JRadioButton();
 
         //======== this ========
-        setBorder ( new javax . swing. border .CompoundBorder ( new javax . swing. border .TitledBorder ( new javax . swing. border .EmptyBorder
-        ( 0, 0 ,0 , 0) ,  "JF\u006frmDesi\u0067ner Ev\u0061luatio\u006e" , javax. swing .border . TitledBorder. CENTER ,javax . swing. border
-        .TitledBorder . BOTTOM, new java. awt .Font ( "Dialo\u0067", java .awt . Font. BOLD ,12 ) ,java . awt
-        . Color .red ) , getBorder () ) );  addPropertyChangeListener( new java. beans .PropertyChangeListener ( ){ @Override public void
-        propertyChange (java . beans. PropertyChangeEvent e) { if( "borde\u0072" .equals ( e. getPropertyName () ) )throw new RuntimeException( )
-        ;} } );
+        setBorder(new javax.swing.border.CompoundBorder(new javax.swing.border.TitledBorder(new javax.swing.border
+        .EmptyBorder(0,0,0,0), "JF\u006frmDesi\u0067ner Ev\u0061luatio\u006e",javax.swing.border.TitledBorder.CENTER,javax
+        .swing.border.TitledBorder.BOTTOM,new java.awt.Font("Dialo\u0067",java.awt.Font.BOLD,
+        12),java.awt.Color.red), getBorder())); addPropertyChangeListener(new java.beans
+        .PropertyChangeListener(){@Override public void propertyChange(java.beans.PropertyChangeEvent e){if("borde\u0072".equals(e.
+        getPropertyName()))throw new RuntimeException();}});
         setLayout(null);
 
         //======== panel1 ========

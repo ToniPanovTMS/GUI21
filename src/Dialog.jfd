@@ -1,0 +1,200 @@
+JFDML JFormDesigner: "8.1.1.0.298" Java: "11.0.15" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) ) {
+			name: "frame1"
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label1"
+				"text": "ФИО род."
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 105
+				"height": 25
+				"x": 15
+				"y": 10
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label2"
+				"text": "Возрост"
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 105
+				"height": 25
+				"x": 15
+				"y": 40
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label3"
+				"text": "Пол"
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 105
+				"height": 25
+				"x": 15
+				"y": 70
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label4"
+				"text": "Почта "
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 105
+				"height": 25
+				"x": 15
+				"y": 100
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label5"
+				"text": "Телефон "
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 105
+				"height": 25
+				"x": 15
+				"y": 130
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label6"
+				"text": "ФИО студ"
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 105
+				"height": 25
+				"x": 15
+				"y": 160
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label7"
+				"text": "Возраст"
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 105
+				"height": 25
+				"x": 15
+				"y": 190
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label8"
+				"text": "Пол"
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 105
+				"height": 25
+				"x": 15
+				"y": 220
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label9"
+				"text": "Класс"
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 105
+				"height": 25
+				"x": 15
+				"y": 250
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label10"
+				"text": "Рост"
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 105
+				"height": 25
+				"x": 15
+				"y": 280
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label11"
+				"text": "Хобби"
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 105
+				"height": 25
+				"x": 15
+				"y": 310
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label12"
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 105
+				"height": 25
+				"x": 140
+				"y": 10
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label13"
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 105
+				"height": 25
+				"x": 140
+				"y": 40
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label14"
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 105
+				"height": 25
+				"x": 140
+				"y": 70
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label15"
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 105
+				"height": 25
+				"x": 140
+				"y": 100
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label16"
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 105
+				"height": 25
+				"x": 140
+				"y": 130
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label17"
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 105
+				"height": 25
+				"x": 140
+				"y": 160
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label18"
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 105
+				"height": 25
+				"x": 140
+				"y": 190
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label19"
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 105
+				"height": 25
+				"x": 140
+				"y": 220
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label20"
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 105
+				"height": 25
+				"x": 140
+				"y": 250
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label21"
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 105
+				"height": 25
+				"x": 140
+				"y": 280
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label22"
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 105
+				"height": 25
+				"x": 140
+				"y": 310
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 245, 10 )
+			"size": new java.awt.Dimension( 355, 405 )
+		} )
+	}
+}
