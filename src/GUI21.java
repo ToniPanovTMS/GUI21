@@ -122,6 +122,7 @@ public class GUI21 extends JPanel {
             dialog.setBounds(dim.width / 2 - 400 / 2, dim.height / 2 - 420 / 2, 400, 420);
             dialog.setVisible(true);
 
+
     }
     private void initComponents() {
         // JFormDesigner - Component initialization - DO NOT MODIFY  //GEN-BEGIN:initComponents  @formatter:off
