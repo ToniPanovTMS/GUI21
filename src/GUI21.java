@@ -29,6 +29,7 @@ public class GUI21 extends JPanel {
         frame.setBounds(dim.width / 2 - 400 / 2, dim.height / 2 - 680 / 2, 400, 680);
         frame.setVisible(true);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+
     }
 
 
